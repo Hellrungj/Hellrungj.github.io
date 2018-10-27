@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router} from 'react-router-dom';
 import NavBar from './components/base/navBar'
 import About from './components/about'
 import Skills from './components/skills'
@@ -119,17 +120,19 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>   
-        <NavBar />
-        <main className="container">
-          <About />
-          <Skills />
-          <Experiences experiences={this.state.experiences}/>
-          <Projects projects={this.state.projects}/>
-          <Education />
-          <Footer social_media={this.state.social_media}/>
-        </main>
-      </React.Fragment>
+      <Router exact path={`/`} >
+        <frameElement>
+          <NavBar />
+          <main className="container">
+            <About />
+            <Skills />
+            <Experiences experiences={this.state.experiences}/>
+            <Projects projects={this.state.projects}/>
+            <Education />
+            <Footer social_media={this.state.social_media}/>
+          </main>
+        </frameElement> 
+      </Router>
     );
   }
 }

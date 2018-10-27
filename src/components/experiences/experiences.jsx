@@ -14,7 +14,7 @@ class Experiences extends Component {
                 {this.state.experiences.map( experiences => (
                     <Experience key={experiences.id} title={experiences.title} location={experiences.location} date={experiences.date} points={experiences.points} demo={experiences.demo} source={experiences.source}/>
                 ))}
-                <p style={{textAlign: "center"}}>See my complete work history on <a href="https://www.linkedin.com/in/johnjameshellrung/" target="_blank">LinkedIn</a></p>
+                <p style={{textAlign: "center"}}>See my complete work history on <a href="https://www.linkedin.com/in/johnjameshellrung/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
             </div>
             </section> 
         );

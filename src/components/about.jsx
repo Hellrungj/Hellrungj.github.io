@@ -21,7 +21,7 @@ class About extends Component {
                             <p>As an aspiring software developer, I focus on web design but I am also interesting in IoT devlopment, mobile appications, desktops appications and AI development. Self-motivated, solutions-oriented developer with experience in developing software solutions and web applications.</p>
                             <p>"I learned that courage was not the absence of fear, but the triumph over it. The brave man is not he who does not feel afraid, but he who conquers that fear." – Nelson Mandela</p>
                             <div style={{textAlign: "center"}}>
-                                <a role="button" aria-pressed="true" className="btn btn-secondary btn-sm" href={this.state.source} target="_blank">
+                                <a role="button" aria-pressed="true" className="btn btn-secondary btn-sm" href={this.state.source} target="_blank" rel="noopener noreferrer">
                                     View Source of This Project
                                 </a>
                             </div>

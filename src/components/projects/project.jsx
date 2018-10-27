@@ -29,10 +29,10 @@ class Project extends Component {
                 </ul>
                 { this.state.demo && this.state.source &&
                 <div style={{textAlign: "center"}}>
-                    <a role="button" aria-pressed="true" className="btn btn-primary btn-sm" href={this.state.demo} target="_blank">
+                    <a role="button" aria-pressed="true" className="btn btn-primary btn-sm" href={this.state.demo} target="_blank" rel="noopener noreferrer">
                         View Demo
                     </a>
-                    <a role="button" aria-pressed="true" className="btn btn-secondary btn-sm" href={this.state.source} target="_blank">
+                    <a role="button" aria-pressed="true" className="btn btn-secondary btn-sm" href={this.state.source} target="_blank" rel="noopener noreferrer">
                         View Source
                     </a>
                 </div>
