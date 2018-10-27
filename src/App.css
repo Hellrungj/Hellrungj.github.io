@@ -1,0 +1,270 @@
+/* Old Color Palette
+#2B2D42 - dark blue = color1
+#8D99AE - light blue = color2
+#EDF2F4 - blue/white = color3
+#EF233C - red = color4
+*/
+
+/* New Color Palette
+#C5D4E5 - Periwinkle or Light Gray
+#7796BA - Wild Blue Yonder or Gray
+#0071F2 - Navy Blue or Blue
+#64A7F4 - Cornflower Blue or Light Blue
+#17549B - Endeavour or Dark Blue
+*/
+
+:root{
+  --color-1: #17549B;
+  --color-2: #64A7F4;
+  --color-3: rgb(219, 219, 219);
+  --color-4: #0071F2;
+  --color-5: rgb(158, 204, 253);
+  --color-6: white;
+  --color-7: rgb(15, 61, 114);
+}
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+  min-width: 1000px;
+}
+a {
+  color: var(--color-4);
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Download button */
+.btn {
+  text-decoration: none;
+  background: var(--color-4);
+  color: var(--color-6);
+  padding: 10px;
+  display: inline-block; 
+}
+
+.btn:hover{
+  color: var(--color-3);
+  background: var(--color-7);
+}
+
+
+/* Header and Footer
+-------------------------*/
+header, footer {
+  background: var(--color-1);
+  color: var(--color-2);
+}
+/* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header h1 {
+  color: var(--color-6);
+}
+header h2 {
+  color: var(--color-3);
+}
+header h1, header h2{
+  margin: 0;
+}
+header p{
+  color: var(--color-6)
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+footer h2{
+  color: var(--color-6);
+}
+
+footer p{
+  color: var(--color-6)
+}
+
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+  color: var(--color-3);
+}
+
+.contact-info a:hover {
+  color: var(--color-2);
+}
+
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*z-index: 100;*/
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+
+
+/* Work & Project Experience
+-------------------------*/
+.work {
+  background: var(--color-5);
+}
+
+.project {
+  background: var(--color-3);
+}
+
+.work h2 , 
+.project h2{
+  color: var(--color-4);
+}
+
+.work h3 a, 
+.project h3 a{
+  color: Black;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description, 
+.project-description {
+  margin-bottom: 5px;
+}
+
+.job-description p, 
+.project-description p {
+  text-align: right;
+}
+.job-description p:first-of-type,
+.project-description p:first-of-type {
+  margin-top: 0;
+}
+
+.project .btn,
+.work .btn {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Education & Skill
+-------------------------*/
+.education {
+  background-size: cover;
+}
+
+.skill {
+  background: var(--color-2);
+  background-size: cover;
+}
+p + h3 {
+  margin-top: 30px;
+}
+.education-description {
+  margin-bottom: 25px;
+}
+.education-description p {
+  text-align: right;
+  margin: 0;
+}
+
+.display-skills {
+  width: 33%;
+  float: left;
+}
+
+.display-topic {
+  text-align: center;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 30%;
+    float: Left;
+  }
+  .profile-img {
+    width: 30%;
+    height: 350px;
+    float: Right;
+  }
+
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .col-narrow{
+    width: 200px;
+  }
+}
