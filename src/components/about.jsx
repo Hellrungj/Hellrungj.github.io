@@ -11,9 +11,9 @@ class About extends Component {
         return ( 
             <header>
                 <section id="#about" className="about">  
-                    <a href={Resume} download class="btn download">Download PDF</a>
+                    <a href={Resume} download className="btn download">Download PDF</a>
                     <div className="content-wrap">
-                        <img class="profile-img col-narrow" src={Profile} alt="John Hellrung"></img>
+                        <img className="profile-img col-narrow" src={Profile} alt="John Hellrung"></img>
                         <div className="col-wide">
                             <h1 className="display-topic">John J. Hellrung</h1>
                             <h2 className="display-topic">Aspiring Software Developer</h2>
