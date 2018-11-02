@@ -71,7 +71,7 @@ Contact owner of the repo see the Contact Info section.
 Current version 2.0
 
 ## Authors
-[Helrungj](https://github.com/Hellrungj/)
+Users: [Hellrungj](https://github.com/Hellrungj/)
 
 ## Contact Info:
 Email: [johnjameshelrung@gmail.com](johnjameshellrung@gmail.com)
