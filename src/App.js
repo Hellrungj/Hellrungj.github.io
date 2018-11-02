@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router} from 'react-router-dom';
+
 import NavBar from './components/base/navBar'
 import About from './components/about'
 import Skills from './components/skills'
@@ -108,15 +109,16 @@ class App extends Component {
       }
     ],
     social_media: [
-      {id: 1, icon:"fa fa-envelope", text: "johnjameshellrung@gmail.com", link: "mailto:johnjameshellrung@gmail.com"},
-      {id: 2, icon:"fa fa-linkedin", text: "LinkedIn", link: "https://www.linkedin.com/in/johnjameshellrung/"},
-      {id: 3, icon:"fa fa-github", text: "github.com/Hellrungj", link: "https://github.com/Hellrungj"},
-      {id: 4, icon:"fa fa-bitbucket", text: "bitbucket.org/hellrungj/", link: "https://bitbucket.org/hellrungj/"},
-      {id: 5, icon:"fa fa-facebook", text: "Facebook", link: "https://www.facebook.com/john.hellrung.7"},
-      {id: 6, icon:"fa fa-twitter", text: "Twitte", link: "https://twitter.com/johnhellrung"}
+      {id: 1, icon:["fas","envelope"], text: "johnjameshellrung@gmail.com", link: "mailto:johnjameshellrung@gmail.com"},
+      {id: 2, icon:["fab","linkedin"], text: "LinkedIn", link: "https://www.linkedin.com/in/johnjameshellrung/"},
+      {id: 3, icon:["fab","github"], text: "github.com/Hellrungj", link: "https://github.com/Hellrungj"},
+      {id: 4, icon:["fab","bitbucket"], text: "bitbucket.org/hellrungj/", link: "https://bitbucket.org/hellrungj/"},
+      {id: 5, icon:["fab", "codepen"], text: "Twitte", link: "https://codepen.io/hellrungj/"},
+      {id: 6, icon:["fab","facebook"], text: "Facebook", link: "https://www.facebook.com/john.hellrung.7"},
+      {id: 7, icon:["fab", "twitter"], text: "Twitte", link: "https://twitter.com/johnhellrung"},
+      {id: 7, icon:["fab", "google"], text: "Twitte", link: "https://plus.google.com/u/0/+JohnHellrung"},
     ]
     }
-  
 
   render() {
     return (

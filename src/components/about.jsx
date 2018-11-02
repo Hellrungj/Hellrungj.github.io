@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Profile from "./../images/profile.png";
 import Resume from "./../resume/Resume-John-Hellrung.pdf"
 
+
 class About extends Component {
     state = { 
         source: "https://github.com/Hellrungj/Hellrungj.github.io"
@@ -11,7 +12,7 @@ class About extends Component {
         return ( 
             <header>
                 <section id="#about" className="about">  
-                    <a href={Resume} download className="btn download">Download PDF</a>
+                    <a href={Resume} download className="btn btn-primary download">Download PDF</a>
                     <div className="content-wrap">
                         <img className="profile-img col-narrow" src={Profile} alt="John Hellrung"></img>
                         <div className="col-wide">

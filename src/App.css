@@ -33,7 +33,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
 h1, h2 {
@@ -67,7 +66,7 @@ a:hover {
 }
 
 /* Download button */
-.btn {
+.btn .download {
   text-decoration: none;
   background: var(--color-4);
   color: var(--color-6);
@@ -75,7 +74,7 @@ a:hover {
   display: inline-block; 
 }
 
-.btn:hover{
+.btn:hover .download{
   color: var(--color-3);
   background: var(--color-7);
 }
