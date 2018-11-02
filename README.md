@@ -1,4 +1,4 @@
-# [Hellrungj.github.io](Hellrungj.github.io)
+# [Hellrungj.github.io](https://hellrungj.github.io/)
 Personal Resume Website
 
 A standard react app with routing, bootstrap, react-fontawesome configure for github pages. 
