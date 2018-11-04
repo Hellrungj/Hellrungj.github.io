@@ -29,6 +29,9 @@ class Footer extends Component {
               </div>
 
               <p>Copyright 2018 by John Hellrung</p>
+              <a role="button" aria-pressed="true" href='https://github.com/Hellrungj/Hellrungj.github.io' target="_blank" rel="noopener noreferrer">
+                (View Source)
+              </a>
             </div>
           </footer>
 

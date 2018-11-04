@@ -10,11 +10,12 @@ class Education extends Component {
           <hr/>
           <div className="col-narrow">
             <h3>Bachelor of Arts in Computer and Information Science</h3>
-            <p>Berea College - Berea, KY</p>
+            
           </div>
           <div className="col-wide education-description">
             <p>Dec. 2017</p>
           </div>
+          <i>Berea College - Berea, KY</i>
         </div>
         </section>  
       );
