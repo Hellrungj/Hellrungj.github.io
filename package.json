@@ -1,5 +1,5 @@
 {
-  "name": "react-app",
+  "name": "resume-react-app",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://hellrungj.github.io/",
@@ -35,5 +35,7 @@
   ],
   "devDependencies": {
     "gh-pages": "^2.0.1"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
