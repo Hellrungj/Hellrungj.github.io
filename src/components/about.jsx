@@ -1,41 +1,54 @@
 import React, { Component } from "react";
-import Profile from "./../images/profile.png";
-import Resume from "./../resume/Resume-John-Hellrung.pdf";
+//import Profile from "./../assets/profile.jpg";
+//import Resume from "./..//assets/resume/Resume-John-Hellrung.pdf";
 
 class About extends Component {
   state = {
-    source: "https://github.com/Hellrungj/Hellrungj.github.io"
+    source: this.props.about.source,
+    profile: {
+      src: this.props.about.profile.src,
+      alt: this.props.about.profile.alt
+    },
+    resume: this.props.about.resume,
+    name: this.props.about.name,
+    title: this.props.about.title,
+    headline: this.props.about.headline,
+    quote: {
+      text: this.props.about.quote.text,
+      isActive: this.props.about.quote.isActive
+    }
   };
 
   render() {
+    const isActive = this.state.quote.isActive;
+    let quote;
+
+    if (isActive) {
+      quote = <p>{this.state.quote.text}</p>;
+    }
+
     return (
       <header>
         <section id="#about" className="about">
-          <a href={Resume} download className="btn btn-primary download">
+          <a
+            href={this.state.resume}
+            download
+            className="btn btn-primary download"
+          >
             Download PDF
           </a>
           <div className="content-wrap">
             <img
               className="profile-img col-narrow"
-              src={Profile}
-              alt="John Hellrung"
+              src={this.state.profile.src}
+              alt={this.state.profile.alt}
             />
             <div className="col-wide">
-              <h1 className="display-topic">John J. Hellrung</h1>
-              <h2 className="display-topic">Software Developer</h2>
+              <h1 className="display-topic">{this.state.name}</h1>
+              <h2 className="display-topic">{this.state.title}</h2>
               <hr />
-              <p>
-                I am a software developer, I focus on web design but I am also
-                interesting in IoT devlopment, mobile appications, desktops
-                appications and AI development. Self-motivated,
-                solutions-oriented developer with experience in developing
-                software solutions and web applications.
-              </p>
-              <p>
-                "I learned that courage was not the absence of fear, but the
-                triumph over it. The brave man is not he who does not feel
-                afraid, but he who conquers that fear." – Nelson Mandela
-              </p>
+              <p>{this.state.headline}</p>
+              {quote}
               <div style={{ textAlign: "center" }}>
                 <a
                   role="button"

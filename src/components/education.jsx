@@ -1,25 +1,28 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Education extends Component {
-    state = {  }
-    render() { 
-        return (
-        <section id="education" className="education">
+  state = {
+    title: this.props.education.title,
+    date: this.props.education.date,
+    location: this.props.education.location
+  };
+  render() {
+    return (
+      <section id="education" className="education">
         <div className="content-wrap">
           <h2 className="display-topic">Education:</h2>
-          <hr/>
+          <hr />
           <div className="col-narrow">
-            <h3>Bachelor of Arts in Computer and Information Science</h3>
-            
+            <h3>{this.state.title}</h3>
           </div>
           <div className="col-wide education-description">
-            <p>Dec. 2017</p>
+            <p>{this.state.date}</p>
           </div>
-          <i>Berea College - Berea, KY</i>
+          <i>{this.state.location}</i>
         </div>
-        </section>  
-      );
-    }
+      </section>
+    );
+  }
 }
- 
+
 export default Education;

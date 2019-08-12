@@ -1,4 +1,4 @@
-/* Old Color Palette
+a/* Old Color Palette
 #2B2D42 - dark blue = color1
 #8D99AE - light blue = color2
 #EDF2F4 - blue/white = color3
@@ -14,10 +14,10 @@
 */
 
 :root {
-  --color-1: #17549B;
-  --color-2: #64A7F4;
+  --color-1: #17549b;
+  --color-2: #64a7f4;
   --color-3: rgb(219, 219, 219);
-  --color-4: #0071F2;
+  --color-4: #0071f2;
   --color-5: rgb(158, 204, 253);
   --color-6: white;
   --color-7: rgb(15, 61, 114);
@@ -91,15 +91,14 @@ a:hover {
   background: var(--color-7);
 }
 
-
 /* Header and Footer
 -------------------------*/
 header {
   background: #000046;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #1CB5E0, #000046);
+  background: -webkit-linear-gradient(to bottom, #1cb5e0, #000046);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #1CB5E0, #000046);
+  background: linear-gradient(to bottom, #1cb5e0, #000046);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color: var(--color-2);
@@ -107,7 +106,7 @@ header {
   position: relative;
   margin-bottom: 20px;
   padding: 100px;
-  box-shadow: 0 10px 30px -5px #00000070
+  box-shadow: 0 10px 30px -5px #00000070;
 }
 
 header h1 {
@@ -124,7 +123,7 @@ header h2 {
 }
 
 header p {
-  color: var(--color-6)
+  color: var(--color-6);
 }
 
 .profile-img {
@@ -138,11 +137,16 @@ header p {
 }
 
 footer {
-  background: #2980B9;
+  background: #2980b9;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, var(--color-1), var(--color-4), #FFFFFF);
+  background: -webkit-linear-gradient(
+    to top,
+    var(--color-1),
+    var(--color-4),
+    #ffffff
+  );
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, var(--color-1), var(--color-4), #FFFFFF);
+  background: linear-gradient(to top, var(--color-1), var(--color-4), #ffffff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -158,15 +162,15 @@ footer h2 {
 }
 
 footer p {
-  color: var(--color-6)
+  color: var(--color-6);
 }
 
 footer a {
-  color: var(--color-6)
+  color: var(--color-6);
 }
 
 footer a:hover {
-  color: var(--color-2)
+  color: var(--color-2);
 }
 
 .svg-inline--fa {
@@ -202,33 +206,30 @@ nav a {
   font-weight: 700;
 }
 
-
 /* Work & Project Experience
 -------------------------*/
 .work {
-  background: #2980B9;
+  background: #2980b9;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+  background: -webkit-linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
+  background: linear-gradient(to bottom, #ffffff, #6dd5fa, #2980b9);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   margin-bottom: 10px;
   padding: 10px;
-  box-shadow: 0 10px 30px -5px #00000070
+  box-shadow: 0 10px 30px -5px #00000070;
 }
 
 .project {
-
   margin-bottom: 10px;
   padding: 10px;
-  box-shadow: 0 10px 30px -5px #00000070
+  box-shadow: 0 10px 30px -5px #00000070;
 }
 
 .work h2,
 .project h2 {
   color: var(--color-4);
-
 }
 
 .work h3 a,
@@ -236,7 +237,7 @@ nav a {
   color: Black;
 }
 
-h3~p {
+h3 ~ p {
   margin: 0;
 }
 
@@ -262,21 +263,21 @@ h3~p {
   margin-right: 10px;
 }
 
-
 /* Education & Skill
 -------------------------*/
 .education {
   color: white;
-  background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+  background: linear-gradient(
+      rgba(141, 153, 174, 0.8),
+      rgba(141, 153, 174, 0.5)
+    ),
     url(./images/Graduation.jpg) no-repeat fixed;
   background-size: cover;
   height: 350px;
   margin-bottom: 20px;
   padding: 60px 50px;
-  box-shadow: 0 10px 30px -5px #00000070
+  box-shadow: 0 10px 30px -5px #00000070;
 }
-
-
 
 .education p {
   padding-top: 7px;
@@ -286,7 +287,7 @@ h3~p {
   background-size: cover;
   margin-bottom: 10px;
   padding: 10px;
-  box-shadow: 0 10px 30px -5px #00000070
+  box-shadow: 0 10px 30px -5px #00000070;
 }
 
 .education-description {
@@ -298,14 +299,13 @@ h3~p {
   margin: 0;
 }
 
-
 .display-skills {
-  padding: 0 16px
+  padding: 0 16px;
 }
 
 .display-skills-items {
   float: left;
-  width: 100%
+  width: 100%;
 }
 
 .display-topic {
@@ -363,24 +363,35 @@ hr {
     float: Left;
   }
 
-  h1 { font-size: 40px; }
-  h2 { font-size: 30px; }
-  h3 { font-size: 16px; }
-  i { font-size: 14px; }
-   p {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  i {
+    font-size: 14px;
+  }
+  p {
     font-size: 12px;
     margin: 0px;
-   }
-  a, li { font-size: 12px; }
-}
-
-@media (min-width:750px) {
-  .display-skills-items {
-    width: 33.33333%
+  }
+  a,
+  li {
+    font-size: 12px;
   }
 }
 
-@media (max-width:749px) {
+@media (min-width: 750px) {
+  .display-skills-items {
+    width: 33.33333%;
+  }
+}
+
+@media (max-width: 749px) {
   .display-skills-items {
     text-align: center;
   }
@@ -399,7 +410,6 @@ hr {
 }
 
 @media (min-width: 330px) {
-
   header,
   .skill,
   .education,
@@ -408,6 +418,11 @@ hr {
     padding: 0px;
   }
 
-  .education { background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
-  url(./images/Graduation.jpg) no-repeat fixed center;}
+  .education {
+    background: linear-gradient(
+        rgba(141, 153, 174, 0.8),
+        rgba(141, 153, 174, 0.5)
+      ),
+      url(./images/Graduation.jpg) no-repeat fixed center;
+  }
 }
