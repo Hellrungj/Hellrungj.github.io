@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Experience extends Component {
+class Experience extends Component<any> {
   state = {
     title: this.props.title,
     location: this.props.location,
@@ -22,7 +22,7 @@ class Experience extends Component {
         </div>
         <i>{this.state.location}</i>
         <ul>
-          {this.state.points.map(points => (
+          {this.state.points.map((points: any) => (
             <li key={points.id}>{points.text}</li>
           ))}
         </ul>

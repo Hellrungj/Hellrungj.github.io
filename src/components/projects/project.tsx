@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Project extends Component {
+class Project extends Component<any> {
   state = {
     title: this.props.title,
     date: this.props.date,
@@ -23,7 +23,7 @@ class Project extends Component {
         </div>
         <i>{this.state.company}</i>
         <ul>
-          {this.state.points.map(points => (
+          {this.state.points.map((points: any) => (
             <li key={points.id}>{points.text}</li>
           ))}
         </ul>

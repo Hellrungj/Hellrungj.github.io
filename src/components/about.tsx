@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-//import Profile from "./../assets/profile.jpg";
-//import Resume from "./..//assets/resume/Resume-John-Hellrung.pdf";
+import Profile from "./../assets/profile.jpg";
+//const Resume = import("./../assets/resume/Resume-John-Hellrung.pdf");
 
-class About extends Component {
+class About extends Component<any> {
   state = {
     source: this.props.about.source,
     profile: {
-      src: this.props.about.profile.src,
+      src: Profile,
       alt: this.props.about.profile.alt
     },
-    resume: this.props.about.resume,
+    resume: process.env.PUBLIC_URL + './../assets/resume/Resume-John-Hellrung.pdf',
     name: this.props.about.name,
     title: this.props.about.title,
     headline: this.props.about.headline,

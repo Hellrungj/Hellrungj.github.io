@@ -13,7 +13,7 @@ a/* Old Color Palette
 #17549B - Endeavour or Dark Blue
 */
 
-:root {
+* {
   --color-1: #17549b;
   --color-2: #64a7f4;
   --color-3: rgb(219, 219, 219);
@@ -146,7 +146,7 @@ footer {
     #ffffff
   );
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, var(--color-1), var(--color-4), #ffffff);
+  background: linear-gradient(to top, #17549b, #0071f2, #ffffff); // color 1 and color 4
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -271,7 +271,7 @@ h3 ~ p {
       rgba(141, 153, 174, 0.8),
       rgba(141, 153, 174, 0.5)
     ),
-    url(./images/Graduation.jpg) no-repeat fixed;
+    url(../Graduation.jpg) no-repeat fixed;
   background-size: cover;
   height: 350px;
   margin-bottom: 20px;
@@ -423,6 +423,7 @@ hr {
         rgba(141, 153, 174, 0.8),
         rgba(141, 153, 174, 0.5)
       ),
-      url(./images/Graduation.jpg) no-repeat fixed center;
+      url(../Graduation.jpg) no-repeat fixed center;
   }
+  
 }

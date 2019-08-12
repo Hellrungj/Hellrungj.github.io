@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Education extends Component {
+class Education extends Component<any> {
   state = {
     title: this.props.education.title,
     date: this.props.education.date,

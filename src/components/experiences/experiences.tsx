@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Experience from "./experience";
 
-class Experiences extends Component {
+class Experiences extends Component<any> {
   state = {
     experiences: this.props.experiences
   };
@@ -11,7 +11,7 @@ class Experiences extends Component {
         <div className="content-wrap">
           <h2 className="display-topic">Experience:</h2>
           <hr />
-          {this.state.experiences.map(experiences => (
+          {this.state.experiences.map((experiences: any) => (
             <Experience
               key={"Experience" + experiences.id}
               title={experiences.title}

@@ -7,7 +7,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 
 library.add(fab, fas);
 
-class Footer extends Component {
+class Footer extends Component<any> {
   state = {
     social_media: this.props.social_media
   };
@@ -20,7 +20,7 @@ class Footer extends Component {
           {/* Social media links. Add or remove any networks.*/}
 
           <div className="contact-info">
-            {this.state.social_media.map(social_media => (
+            {this.state.social_media.map((social_media: any) => (
               <a
                 key={"Social Media Link" + social_media.id}
                 href={social_media.link}

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Skills extends Component {
+class Skills extends Component<any> {
   state = {
     languages: this.props.skills.languages,
     frameworks: this.props.skills.frameworks,

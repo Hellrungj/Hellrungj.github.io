@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Project from "./project";
 
-class Projects extends Component {
+class Projects extends Component<any> {
   state = {
     projects: this.props.projects
   };
@@ -11,7 +11,7 @@ class Projects extends Component {
         <div className="content-wrap">
           <h2 className="display-topic">Projects:</h2>
           <hr />
-          {this.state.projects.map(projects => (
+          {this.state.projects.map((projects: any) => (
             <Project
               key={"Project" + projects.id}
               title={projects.title}
