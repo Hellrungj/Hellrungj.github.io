@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Profile from "./../assets/profile.jpg";
+import Profile from "./../assets/images/profile.jpg";
 //const Resume = import("./../assets/resume/Resume-John-Hellrung.pdf");
 
 class About extends Component<any> {
@@ -28,7 +28,6 @@ class About extends Component<any> {
     }
 
     return (
-      <header>
         <section id="#about" className="about">
           <a
             href={this.state.resume}
@@ -64,7 +63,6 @@ class About extends Component<any> {
             </div>
           </div>
         </section>
-      </header>
     );
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "typescript_react_app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
@@ -19,6 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,6 +44,9 @@
     "@types/react": "16.9.1",
     "@types/react-dom": "16.8.5",
     "@types/react-router": "^5.0.3",
-    "@types/react-router-dom": "^4.3.4"
-  }
+    "@types/react-router-dom": "^4.3.4",
+    "gh-pages": "^2.0.1"
+  },
+  "keywords": [],
+  "description": ""
 }

@@ -23,13 +23,14 @@ class Experiences extends Component<any> {
             />
           ))}
           <p style={{ textAlign: "center" }}>
-            See my complete work history on{" "}
             <a
+              role="button"
               href="https://www.linkedin.com/in/johnjameshellrung/"
+              className="btn btn-secondary btn-bg"
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              See my complete work history on LinkedIn
             </a>
           </p>
         </div>
