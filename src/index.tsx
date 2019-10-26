@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
 import App from "./components/app";
-import "./assets/styles/index.scss";
+import "./assets/styles/new.scss";
 
 ReactDOM.render(
   <Router basename={process.env.PUBLIC_URL}>

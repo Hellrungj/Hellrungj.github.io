@@ -13,16 +13,16 @@ class Skills extends Component<any> {
           <h2 className="display-topic">Skills:</h2>
           <hr />
           <div className="display-skills">
-            <div className="display-skills-items">
+            <div className="skill-item">
               <h3>Languages:</h3>
               <p>{this.state.languages}</p>
             </div>
-            <div className="display-skills-items">
+            <div className="skill-item">
               <h3>Frameworks:</h3>
               <p>{this.state.frameworks}</p>
             </div>
-            <div className="display-skills-items">
-              <h3>Systems & Tools:</h3>
+            <div className="skill-item">
+              <h3>Systems &amp; Tools:</h3>
               <p>{this.state.systemsTools}</p>
             </div>
           </div>

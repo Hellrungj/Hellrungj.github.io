@@ -7,10 +7,13 @@ class Experiences extends Component<any> {
   };
   render() {
     return (
-      <section id="experince" className="work">
+      <section id="#experince" className="experince">
         <div className="content-wrap">
-          <h2 className="display-topic">Experience:</h2>
+          <h2 className="display-title">Experience:</h2>
           <hr />
+          <form action="#">
+            <input className="search" placeholder="Experience" type="text" required />
+          </form>
           {this.state.experiences.map((experiences: any) => (
             <Experience
               key={"Experience" + experiences.id}
@@ -22,7 +25,7 @@ class Experiences extends Component<any> {
               source={experiences.source}
             />
           ))}
-          <p style={{ textAlign: "center" }}>
+          <p className="cta" style={{ textAlign: "center" }}>
             <a
               role="button"
               href="https://www.linkedin.com/in/johnjameshellrung/"

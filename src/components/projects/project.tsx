@@ -11,28 +11,28 @@ class Project extends Component<any> {
   };
   render() {
     return (
-      <div>
+      <div className="project-item">
         <div>
-          <div className="col-narrow">
+          <div className="title">
             <h3>{this.state.title}</h3>
           </div>
 
-          <div className="col-wide project-description">
+          <div className="date">
             <p>{this.state.date}</p>
           </div>
         </div>
-        <i>{this.state.company}</i>
-        <ul>
+        <i className="company">{this.state.company}</i>
+        <ul className="points">
           {this.state.points.map((points: any) => (
             <li key={points.id}>{points.text}</li>
           ))}
         </ul>
         {this.state.demo && this.state.source && (
-          <div style={{ textAlign: "center" }}>
+          <div className="demo-source" style={{ textAlign: "center" }}>
             <a
               role="button"
               aria-pressed="true"
-              className="btn btn-primary btn-sm"
+              className="btn"
               href={this.state.demo}
               target="_blank"
               rel="noopener noreferrer"
@@ -42,7 +42,7 @@ class Project extends Component<any> {
             <a
               role="button"
               aria-pressed="true"
-              className="btn btn-secondary btn-sm"
+              className="btn"
               href={this.state.source}
               target="_blank"
               rel="noopener noreferrer"

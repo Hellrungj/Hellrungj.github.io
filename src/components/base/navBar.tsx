@@ -3,39 +3,40 @@ import React, { Component } from "react";
 class NavBar extends Component<any> {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="/">
-          John J. Hellrung
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
-            <a className="nav-item nav-link active" href="#about">
-              About <span className="sr-only">(current)</span>
-            </a>
-            <a className="nav-item nav-link" href="#skill">
-              Skills
-            </a>
-            <a className="nav-item nav-link" href="#experince">
-              Experience
-            </a>
-            <a className="nav-item nav-link" href="#project">
-              Projects
-            </a>
-            <a className="nav-item nav-link" href="#education">
-              Education
-            </a>
-          </div>
+      <nav>
+        <div className="logo">
+          <a className="brand"> John J. Hellrung </a>
+        </div>
+        <ul className="nav-links">
+          <li>
+            <i className="icon fas fa-address-card"></i>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <i className="icon fas fa-tools"></i>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <i className="icon fas fa-briefcase"></i>
+            <a href="#expereince">Experience</a>
+          </li>
+          <li> 
+            <i className="icon fas fa-project-diagram"></i>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <i className="icon fas fa-graduation-cap"> </i>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <i className="icon fas fa-cog"> </i>
+            <a href="#setting">Setting </a>
+          </li>
+        </ul>
+        <div className="burger">
+          <div className="line1"></div>
+          <div className="line2"></div>
+          <div className="line3"></div>
         </div>
       </nav>
     );

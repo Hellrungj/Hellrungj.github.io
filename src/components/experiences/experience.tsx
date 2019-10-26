@@ -11,23 +11,23 @@ class Experience extends Component<any> {
   };
   render() {
     return (
-      <div>
+      <div className="experience-item">
         <div>
-          <div className="col-narrow">
+          <div className="title">
             <h3>{this.state.title}</h3>
           </div>
-          <div className="col-wide job-description">
+          <div className="date">
             <p>{this.state.date}</p>
           </div>
         </div>
-        <i>{this.state.location}</i>
-        <ul>
+        <i className="company">{this.state.location}</i>
+        <ul className="points">
           {this.state.points.map((points: any) => (
             <li key={points.id}>{points.text}</li>
           ))}
         </ul>
         {this.state.demo && this.state.source && (
-          <div style={{ textAlign: "center" }}>
+          <div className="demo-source" style={{ textAlign: "center" }}>
             <a
               role="button"
               aria-pressed="true"

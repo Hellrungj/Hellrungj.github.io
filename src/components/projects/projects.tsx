@@ -7,10 +7,13 @@ class Projects extends Component<any> {
   };
   render() {
     return (
-      <section id="project" className="project">
+      <section id="#project" className="project">
         <div className="content-wrap">
-          <h2 className="display-topic">Projects:</h2>
+          <h2 className="section-title">Projects:</h2>
           <hr />
+          <form action="#">
+            <input className="search" placeholder="Projects" type="text" required />
+          </form>
           {this.state.projects.map((projects: any) => (
             <Project
               key={"Project" + projects.id}
@@ -22,7 +25,7 @@ class Projects extends Component<any> {
               source={projects.source}
             />
           ))}
-          <p style={{ textAlign: "center" }}>
+          <p className="cta" style={{ textAlign: "center" }}>
             See my complete project history on{" "}
             <a
               href="https://github.com/Hellrungj"

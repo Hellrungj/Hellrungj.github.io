@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Profile from "./../assets/images/profile.jpg";
 //const Resume = import("./../assets/resume/Resume-John-Hellrung.pdf");
 
+// TODO: Make an Typescript Interface
+
 class About extends Component<any> {
   state = {
     source: this.props.about.source,
@@ -29,38 +31,38 @@ class About extends Component<any> {
 
     return (
         <section id="#about" className="about">
-          <a
-            href={this.state.resume}
-            download
-            className="btn btn-primary download"
-          >
-            Download PDF
-          </a>
           <div className="content-wrap">
-            <img
+            <a
+              href={this.state.resume}
+              download
+              className="download"
+            >
+              Download PDF
+            </a>
+            {/*<img
               className="profile-img col-narrow"
               src={this.state.profile.src}
               alt={this.state.profile.alt}
-            />
-            <div className="col-wide">
-              <h1 className="display-topic">{this.state.name}</h1>
-              <h2 className="display-topic">{this.state.title}</h2>
-              <hr />
-              <p>{this.state.headline}</p>
-              {quote}
-              <div style={{ textAlign: "center" }}>
-                <a
-                  role="button"
-                  aria-pressed="true"
-                  className="btn btn-secondary btn-sm"
-                  href={this.state.source}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Source of This Project
-                </a>
-              </div>
+            /> */}
+            {/*<div className="col-wide">*/}
+            <h1 className="display-topic">{this.state.name}</h1>
+            <h2 className="display-topic">{this.state.title}</h2>
+            <hr />
+            <p>{this.state.headline}</p>
+            {/*quote*/}
+            <div style={{ textAlign: "center" }}>
+              <a
+                role="button"
+                aria-pressed="true"
+                className="btn btn-secondary btn-sm"
+                href={this.state.source}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Source of This Project
+              </a>
             </div>
+            {/*</div>*/}
           </div>
         </section>
     );
