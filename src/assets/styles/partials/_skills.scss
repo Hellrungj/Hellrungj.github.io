@@ -1,0 +1,27 @@
+/* Skills */
+.skill {
+    padding: 5px 10px;
+    .content-wrap {
+      box-shadow: 0 10px 30px -5px #00000070;
+      background: 
+        linear-gradient(45deg, $color-1, transparent),
+        repeating-linear-gradient(45deg, $color-1 0%, $color-1, 5%, white 5%, white 10%);
+      color: white;
+      text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;  
+      
+    }
+    
+    .display-skills {
+      padding: 10px 16px;
+    }
+  
+    .skill-item {
+      float: left;
+      width: 33.33333%;
+      text-align: center;   
+    }
+  }

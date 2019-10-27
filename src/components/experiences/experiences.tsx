@@ -9,7 +9,7 @@ class Experiences extends Component<any> {
     return (
       <section id="#experince" className="experince">
         <div className="content-wrap">
-          <h2 className="display-title">Experience:</h2>
+          <h2 className="section-title">Experience:</h2>
           <hr />
           <form action="#">
             <input className="search" placeholder="Experience" type="text" required />

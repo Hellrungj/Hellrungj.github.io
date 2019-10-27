@@ -1,0 +1,51 @@
+/* About */
+.about {
+    padding: 5px 10px;
+    .profile-img {
+      border-radius: 50%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .content-wrap {
+      position: relative;
+      background: linear-gradient(to bottom, $color-8, $color-9);
+      color: $color-6;
+      box-shadow: 0 10px 30px -5px #00000070;
+      .col-wide {
+          padding-top: 100px;
+          padding-bottom: 100px;
+      }
+    }
+    
+    h1, h2 {
+      text-align: center
+    }
+    h2 {
+      padding-bottom: 10px;
+    }
+    p{
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+    .quote{
+      padding-top: 10px;
+    }
+    /* Download button */
+    .download {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-decoration: none;
+        background: $color-6;
+        color: $color-9;
+        padding: 10px;
+        display: inline-block;
+    }
+    
+    .download:hover {
+      background: $color-7;
+      color: $color-6;
+    }
+  }

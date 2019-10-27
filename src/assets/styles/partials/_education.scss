@@ -1,0 +1,49 @@
+/* Education */
+.education {
+    padding: 10px;
+  
+    .content-wrap {
+      padding-bottom: 200px;
+      color: white;
+      background: linear-gradient(
+          rgba(141, 153, 174, 0.8),
+          rgba(141, 153, 174, 0.5)
+        ),
+        $graduation-image no-repeat fixed;
+        //url(http://via.placeholder.com/1000x1000.jpeg?text=Image) no-repeat fixed;
+      background-size: cover;
+      height: 150px;
+      text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;  
+    }
+    .title, 
+    .company, 
+    .points {
+      width: 70%;
+      padding-left: 25px;
+    }
+    
+    .title {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    
+    .school {
+      padding-left: 25px;
+    }
+    
+    .points {
+      padding-top: 5px;
+      padding-bottom: 20px;
+    }
+    
+    .date {
+      width: 30%;
+      float: right;
+      padding-right: 25px;
+      text-align: right;
+    }
+  }

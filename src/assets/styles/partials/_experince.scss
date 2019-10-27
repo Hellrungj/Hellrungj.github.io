@@ -1,0 +1,41 @@
+/* Experince */
+.experince {
+    padding: 5px 10px;
+    .content-wrap {
+    background: linear-gradient(to bottom, #2980b9, #6dd5fa, #fffccc);
+    box-shadow: 0 10px 30px -5px #00000070;
+    color: black;
+    }
+    .title, 
+    .company, 
+    .points {
+      width: 70%;
+      padding-left: 25px;
+    }
+    
+    .title {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    
+    .company {
+      padding-left: 25px;
+    }
+    
+    .points {
+      padding-top: 5px;
+      padding-bottom: 20px;
+    }
+    
+    .date {
+      width: 30%;
+      float: right;
+      padding-right: 25px;
+      text-align: right;
+    }
+    .cta, .demo-source {
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 20px;
+    }
+  }

@@ -9,22 +9,24 @@ import Projects from "./projects/projects";
 import Experiences from "./experiences/experiences";
 import Education from "./education";
 import Footer from "./base/footer";
+import Event from "./event";
 
 //Question Data
 import Data from "./../data/db.json";
 
-const SVGWaves = `<svg className="waves" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"
-                  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                  <defs>
-                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                  </defs>
-                  <g className="parallax">
-                    <use href="#gentle-wave" x="48" y="0" fill="rgba(0,113,242,0.7" />
-                    <use href="#gentle-wave" x="48" y="3" fill="rgba(125,84,155,0.5)" />
-                    <use href="#gentle-wave" x="48" y="5" fill="rgba(23,84,155,0.3)" />
-                    <use href="#gentle-wave" x="48" y="7" fill="rgba(23,84,155,1)" />
-                  </g>
+const SVGWaves = `<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                      <defs>
+                      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                      </defs>
+                      <g class="parallax">
+                      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,113,242,0.7" />
+                      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(125,84,155,0.5)" />
+                      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(23,84,155,0.3)" />
+                      <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(23,84,155,1)" />
+                      </g>
                   </svg>`
+
 
 class App extends Component<any> {
   state = {
@@ -46,7 +48,7 @@ class App extends Component<any> {
               <Education education={this.state.data.education} />
             </Route>
           </Switch>
-          <a id="toTopButton"></a>
+          <Event />
           <div dangerouslySetInnerHTML={{__html: SVGWaves}} />
           <Footer social_media={this.state.data.social_media} /> 
           </div>

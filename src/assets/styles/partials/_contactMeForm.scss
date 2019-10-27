@@ -1,0 +1,179 @@
+
+// Sign Form - https://codepen.io/joshsorosky/pen/gaaBoB?editors=0100
+// Modal - https://codepen.io/timothylong/pen/HhAer/?editors=1100
+// Contact button - https://codepen.io/andrewerrico/pen/Efyrt?editors=1010
+
+.contactForm { 
+    border: 6px solid $color-1; 
+    padding: 2em;
+    width: 400px;
+    text-align: center;
+    background: #fff;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%)
+  }
+  
+  input {
+    margin: .8em auto;
+    width: 90%;
+    height: 35px;
+      padding-left: 15px;
+      border: none;
+      border-radius: 20px;
+    margin-bottom: 10px;
+    background: $color-3;
+  }
+  
+  textarea { 
+    margin: .8em auto;
+    width: 100%;
+    height: 35px;
+      padding-left: 15px;
+      border: none;
+      border-radius: 15px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    background: $color-3;
+    display: block; 
+    width: 90%; 
+  }
+  textarea { height: 80px; resize: none; }
+  
+  .formBtn { 
+    padding-right: 15px;
+    width: 140px;
+    display: inline-block;
+    background: $color-1;
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.2em;
+    border: none;
+    height: 30px;
+  }
+  
+  .modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    &:target {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    &>div {
+      width: 400px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2em;
+      background: #ffffff;
+    }
+    header {
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 150%;
+      margin: 0 0 15px;
+    }
+  }
+  
+  .modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    &:hover {
+      color: black;
+    }
+  }
+  
+  .search {
+    width: 100%;
+    height: 35px;
+      padding-left: 15px;
+      border: none;
+      border-radius: 20px;
+    margin-bottom: 20px;
+    background: #ffffff;
+  }
+  
+  .panel {
+    color: #f8f8f8;
+  }
+  
+  .dropdown .row {
+      padding: 12px 15px;
+      background-color: #f8f8f8;
+      color: #888888;
+      border-radius: 3px;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+  }
+  
+  .text { font-size: 16px; }
+  .icon { font-size: 20px; }
+  
+  .panel :hover {
+      color: #6c6c6c;
+      cursor: pointer;
+  }
+  
+  input#toggle { display: none; }
+  input#toggle ~ .dropdown { display: none; }
+  input#toggle:checked ~ .dropdown { display: block; }
+  
+  .dropdown { 
+    position: absolute;
+    z-index: 1;
+    top: 3em;
+    right: 0;
+    margin-top: 7px; 
+  }
+  
+  .dropdown .arrow {
+      width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 9px solid #f8f8f8;
+    margin-left: 65%;
+  }
+  
+  .dropdown .row {
+      border-radius: 0;
+      box-shadow: none;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+      text-align: left;
+  }
+  
+  .dropdown .row:nth-child(2) { border-radius: 3px 3px 0 0; }
+  .dropdown .row:last-child { border-radius: 0 0 3px 3px; }
+  
+  .dropdown:hover > .row { color: #bebebe; }
+  
+  .dropdown .row:hover {
+      background-color: #ebebeb;
+      color: #6c6c6c;
+  }
+  
+  

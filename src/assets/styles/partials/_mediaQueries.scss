@@ -1,0 +1,86 @@
+/* Media Queries */
+
+@media screen and (max-width: 1024px) { 
+    .about {
+      .profile-img {
+        border-radius: 50%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 50%;
+      }
+      .col-wide {
+        width: 60%;
+        float: right;
+    }
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .nav-links {
+      width: 50% !important;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    body {
+      overflow-x: hidden;
+    }
+   .content-wrap {
+      position: static !important;
+     .col-wide {
+       width: 40%;
+     }
+    }
+    
+   .download {
+      position: fixed !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      left: 70%;
+      text-align: center;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+    }
+    nav {
+      position: fixed;
+      right: 0;
+      left: 0;
+    }
+    
+    .about {
+      padding-top: 61px;
+    }
+    
+    .nav-links {
+      position: fixed;
+      right: 0px;
+      height: 90vh;
+      width: 30% !important;
+      top: 10.5vh;
+      z-index: 1;
+      background-color: $bg-color;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+      padding-botttom: 10%;
+  
+      li {
+        opacity: 0;
+  
+      }
+      li:last-child {
+        padding-bottom: 20%;
+      }
+    }
+    .burger {
+      padding-left: 5%;
+      display: block !important;
+    }
+  
+    .nav-active {
+      transform: translateX(0%);
+    }
+  }

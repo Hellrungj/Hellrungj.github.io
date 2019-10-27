@@ -1,0 +1,64 @@
+h1 {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+a {
+  color: $color-7;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 3.2px;
+  margin: 10px;
+  padding: 5px;
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn:hover {
+  opacity: .7;
+}
+
+/* Main */
+
+.section-title {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  
+  .content-wrap {
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 40px 50px;
+    overflow: hidden;
+  }
+  
+  .col-wide {
+    width: 60%;
+    float: right;
+  }
+
+  .attachment-full {
+    position: absolute;
+  }

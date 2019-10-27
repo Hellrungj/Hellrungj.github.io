@@ -10,7 +10,7 @@ class Skills extends Component<any> {
     return (
       <section id="skill" className="skill">
         <div className="content-wrap">
-          <h2 className="display-topic">Skills:</h2>
+          <h2 className="section-title">Skills:</h2>
           <hr />
           <div className="display-skills">
             <div className="skill-item">

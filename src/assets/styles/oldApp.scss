@@ -1,0 +1,465 @@
+// Varables
+
+// Standard colors
+$color: (
+  1: #17549b,
+  2: #64a7f4,
+  3: rgb(219, 219, 219),
+  4: #0071f2,
+  5: rgb(158, 204, 253),
+  6: white,
+  7: rgb(15, 61, 114)
+);
+//linear-gradient colors
+$about-color: (
+  start: #1cb5e0,
+  end: #000046
+);
+
+$work-color: (
+  start: #ffffff,
+  middle: #6dd5fa,
+  end: #2980b9
+);
+
+$education-color: (
+  start: rgba(141, 153, 174, 0.8),
+  end: rgba(141, 153, 174, 0.5)
+);
+
+$footer-color: (
+  start: #17549b,
+  middle: #0071f2,
+  end: #ffffff
+);
+
+/* Functions */
+@function getColor($color-name, $color-set) {
+  @return map-get($color-set, $color-name)
+};
+
+@function getTwoColor($color-name,$color-name2,$color-set){
+  @return getColor($color-set,$color-name), getColor($color-set,$color-name2)
+};
+
+@function getThreeColor($color-name,$color-name2,$color-name3){
+  @return getColor($color-set,$color-name), getColor($color-set,$color-name2), getColor($color-set,$color-name3)
+};
+
+// Varables
+
+// Standard colors
+$color-1: #17549b;
+$color-2: #64a7f4;
+$color-3: rgb(219, 219, 219);
+$color-4: #0071f2;
+$color-5: rgb(158, 204, 253);
+$color-6: white;
+$color-7: rgb(15, 61, 114);
+
+// Images
+$graduation-image: url(../images/graduation.webp);
+
+//linear-gradient colors
+$about-start-color: #1cb5e0;
+$about-end-color: #000046;
+
+$footer-start-color: #17549b;
+$footer-middle-color: #0071f2;
+$footer-end-color: #ffffff;
+
+$work-start-color: #ffffff;
+$work-middle-color: #6dd5fa;
+$work-end-color: #2980b9; 
+
+$education-start-color:rgba(141, 153, 174, 0.8);
+$education-end-color:rgba(141, 153, 174, 0.5);
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Foundtion */
+html {
+  box-sizing: border-box;
+
+  body {
+    margin: 0;
+    h1 {
+      font-size: 70px;
+      font-weight: 300;
+    }
+    
+    h2 {
+      font-size: 40px;
+      margin-top: 0;
+      font-weight: 300;
+    }
+    
+    h3 {
+      margin: 0;
+    }
+    
+    a {
+      color: $color-4;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+/* NavBar------------------------*/
+
+/* About-------------------------*/
+.about {
+  background: #000046;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, $about-start-color, $about-end-color);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, $about-start-color, $about-end-color);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: var(--color-2);
+  padding-top: 50px;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 100px;
+  box-shadow: 0 10px 30px -5px #00000070;
+
+  h1 {
+    color: $color-6;
+  }
+
+  h2 {
+    color: $color-3;
+  }
+
+  h1, h2 {
+    margin: 0;
+  }
+
+  p {
+    color: $color-6;
+  }
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  overflow: hidden;
+}
+
+/* Footer */
+footer {
+  background: #2980b9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    $color-1,
+    $color-4,
+    #ffffff
+  );
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, footer-first-color, footer-middle-color, footer-end-color); // color 1 and color 4
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+
+  h2 {
+    color: $color-6;
+  }
+
+  p {
+    color: $color-6;
+  }
+
+  a {
+    color: $color-6;
+  }
+
+  a:hover {
+    color: $color-2;
+  }
+}
+
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*z-index: 100;*/
+
+  a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+/* Work & Project Experience */
+.work {
+  background: #2980b9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, $work-start-color, $work-middle-color, $work-end-color);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, $work-start-color, $work-middle-color, $work-end-color);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 10px 30px -5px #00000070;
+}
+
+.project {
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 10px 30px -5px #00000070;
+}
+
+.work h2,
+.project h2 {
+  color: $color-4;
+}
+
+.work h3 a,
+.project h3 a {
+  color: Black;
+}
+
+h3 ~ p {
+  margin: 0;
+}
+
+.job-description,
+.project-description {
+  margin-bottom: 5px;
+}
+
+.job-description p,
+.project-description p {
+  text-align: right;
+}
+
+.job-description p:first-of-type,
+.project-description p:first-of-type {
+  margin-top: 0;
+}
+
+.project .btn,
+.work .btn {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Education & Skill */
+.education {
+  color: white;
+  background: linear-gradient($education-start-color, $education-end-color), $graduation-image no-repeat center;
+  //background-size: cover;
+  height: 300px;
+  margin-bottom: 20px;
+  padding: 60px 50px;
+  box-shadow: 0 10px 30px -5px #00000070;
+
+  p {
+    padding-top: 7px;
+  }
+}
+
+.skill {
+  background-size: cover;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 10px 30px -5px #00000070;
+}
+
+.education-description {
+  margin-bottom: 25px;
+
+  p {
+    text-align: right;
+    margin: 0;
+  }
+}
+
+.display-skills {
+  padding: 0 16px;
+}
+
+.display-skills-items {
+  float: left;
+  width: 100%;
+}
+
+.display-topic {
+  text-align: center;
+}
+
+.work h3,
+.project h3,
+.education h3 {
+  min-width: 900px;
+}
+
+/* Line */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Profile Image */
+
+.profile-img {
+  border-radius: 50%;
+}
+
+/* Download button */
+.btn .download {
+  text-decoration: none;
+  background: $color-4;
+  color: $color-6;
+  padding: 10px;
+  display: inline-block;
+}
+
+.btn:hover .download {
+  color: $color-3;
+  background: $color-7;
+}
+
+/* SVG Icons */
+.svg-inline--fa {
+  font-size: 20px;
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* Footer Icons */
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+  color: $color-3;
+}
+
+.contact-info a:hover {
+  color: $color-2;
+}
+
+/* Media Queries */
+@media (min-width: 991px) {
+  .col-narrow {
+    width: 30%;
+    float: Left;
+  }
+
+  .profile-img {
+    width: 30%;
+    height: 350px;
+    float: Left;
+  }
+
+  .col-wide {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  .about {
+    text-align: center;
+  }
+
+  .col-narrow {
+    width: 30%;
+    float: Left;
+  }
+
+  .col-wide {
+    width: 70%;
+    float: Left;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  i {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+    margin: 0px;
+  }
+  a,
+  li {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 750px) {
+  .display-skills-items {
+    width: 33.33333%;
+  }
+}
+
+@media (max-width: 749px) {
+  .display-skills-items {
+    text-align: center;
+  }
+  .col-narrow {
+    width: 30%;
+    float: Left;
+  }
+
+  .col-wide {
+    width: 70%;
+    float: Left;
+  }
+  .education h3 {
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 330px) {
+  .about,
+  .skill,
+  .education,
+  .work,
+  .project {
+    padding: 0px;
+  }
+
+  .education {
+  background: linear-gradient($education-start-color, $education-end-color), $graduation-image no-repeat center;
+  }
+  
+}

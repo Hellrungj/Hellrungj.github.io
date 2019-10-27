@@ -1,0 +1,57 @@
+/* Projects */
+.project {
+    padding: 5px 10px;
+    .content-wrap {
+      box-shadow: 0 10px 30px -5px #00000070;
+      background: 
+        linear-gradient(90deg, $color-1, transparent),
+        repeating-linear-gradient(-45deg, $color-1 0%, $color-1, 5%,  transparent 5%, transparent 10%);
+      color: white;
+      text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;  
+      
+    }
+    .title, 
+    .company, 
+    .points {
+      width: 70%;
+      padding-left: 25px;
+    }
+    
+    .title {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    
+    .company {
+      padding-left: 25px;
+    }
+    
+    .points {
+      padding-top: 5px;
+      padding-bottom: 20px;
+    }
+    
+    .date {
+      width: 30%;
+      float: right;
+      padding-right: 25px;
+      text-align: right;
+    }
+    .cta, .demo-source {
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 20px;
+      a {
+        color: white;
+      }
+    }
+    .btn {
+      background: $color-1;
+      color: $color-6;
+      border: 1px solid $color-6;
+    }
+  }
