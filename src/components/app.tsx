@@ -9,7 +9,7 @@ import Projects from "./projects/projects";
 import Experiences from "./experiences/experiences";
 import Education from "./education";
 import Footer from "./base/footer";
-import Event from "./event";
+import ToTopButton from "./toTopButton";
 
 //Question Data
 import Data from "./../data/db.json";
@@ -48,7 +48,7 @@ class App extends Component<any> {
               <Education education={this.state.data.education} />
             </Route>
           </Switch>
-          <Event />
+          <ToTopButton />
           <div dangerouslySetInnerHTML={{__html: SVGWaves}} />
           <Footer social_media={this.state.data.social_media} /> 
           </div>
