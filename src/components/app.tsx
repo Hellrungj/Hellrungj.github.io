@@ -38,6 +38,7 @@ class App extends Component<any> {
     return (
       <BrowserRouter>
         <NavBar />
+        <h1 className="App-inner border border-white">Hello World 2</h1>
         <div className="container">
           <Switch>
             <Route exact path={`/`}>

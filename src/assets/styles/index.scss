@@ -17,3 +17,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@import './partials/resets';
+
+@import './partials/variables';
+
+@import './partials/navBar';
+@import './partials/main';
+
+@import './partials/about';
+@import './partials/skills';
+@import './partials/experince';
+@import './partials/projects';
+@import './partials/education';
+@import './partials/footer';
+
+@import './partials/animtations';
+@import './partials/mediaQueries';
+
+@import './partials/contactMeForm';
+
+/* App.css */
+
+// TEST TAILWIND with SCSS
+.App {
+    width: 100vw;
+    height: 100vh;
+    @apply bg-green-500 flex items-center justify-center;
+  
+    &-inner {
+      @apply bg-gray-900 text-white p-4;
+    }
+  }
