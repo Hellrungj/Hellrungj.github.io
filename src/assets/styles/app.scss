@@ -1,23 +1,9 @@
-// Ideas: http://www.adhamdannaway.com
-// https://www.ybrikman.com/projects/
-// https://codeburst.io/10-awesome-web-developer-portfolios-d266b32e6154
-// https://skillcrush.com/2014/08/11/portfolio-advice-2/
-// https://andrewborstein.com/
-@import './partials/resets';
+.App {
+  width: 100vw;
+  height: 100vh;
+  @apply bg-green-500 flex items-center justify-center;
 
-@import './partials/variables';
-
-@import './partials/navBar';
-@import './partials/main';
-
-@import './partials/about';
-@import './partials/skills';
-@import './partials/experince';
-@import './partials/projects';
-@import './partials/education';
-@import './partials/footer';
-
-@import './partials/animtations';
-@import './partials/mediaQueries';
-
-@import './partials/contactMeForm';
+  &-inner {
+    @apply bg-gray-900 text-white p-4;
+  }
+}
