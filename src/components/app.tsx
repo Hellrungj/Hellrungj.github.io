@@ -1,10 +1,21 @@
-import '../assets/styles/app.scss';
+// eslint-disable-next-line
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import About from "./about";
+import Projects from "./projects";
+import "../assets/styles/app.scss";
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-inner border border-white">Success!</div>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Switch>
+          <Route exact path={`/`}>
+            <About />
+            <Projects />
+          </Route>
+        </Switch>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,9 +1,0 @@
-.App {
-  width: 100vw;
-  height: 100vh;
-  @apply bg-green-500 flex items-center justify-center;
-
-  &-inner {
-    @apply bg-gray-900 text-white p-4;
-  }
-}
